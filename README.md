@@ -39,12 +39,6 @@ make docker-up
 make migrate-up
 ```
 
-4) Запуск приложения:
-
-```
-make run
-```
-
 ## Swagger
 
 Генерация документации:
