@@ -4,4 +4,3 @@ bin/
 
 .DS_Store
 .env.local
-**/mock/
