@@ -10,20 +10,22 @@ Task API — REST API сервис для управления задачами 
 - базовой backend-архитектуры
 
 ## Стек технологий
-- Go 1.22
-- net/http (без фреймворков)
+- Go 1.23 (toolchain 1.24)
+- net/http
 - PostgreSQL
 - database/sql
 - Docker, Docker Compose
-
-Используется только стандартная библиотека Go (кроме драйвера PostgreSQL).
+- Swagger
+- GoMock
+- UUID
 
 ## Быстрый старт
 
-1) Создать `.env` из шаблона:
+1) Создать `.env` и/или `.env.local` из шаблона:
 
 ```
 cp .env.example .env
+cp .env.example .env.local
 ```
 
 2) Поднять сервисы:
@@ -36,6 +38,12 @@ make docker-up
 
 ```
 make migrate-up
+```
+
+4) Запуск приложения:
+
+```
+make run
 ```
 
 ## Swagger
@@ -72,6 +80,12 @@ Swagger UI:
 ```
 make lint
 ```
+
+### Покрытие
+
+По последнему запуску `go test ./... -cover`:
+- `internal/api`: 70.7%
+- `internal/service`: 84.9%
 
 ## UUID
 
