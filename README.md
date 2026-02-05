@@ -21,11 +21,10 @@ Task API — REST API сервис для управления задачами 
 
 ## Быстрый старт
 
-1) Создать `.env` и/или `.env.local` из шаблона:
+1) Создать `.env` из шаблона:
 
 ```
 cp .env.example .env
-cp .env.example .env.local
 ```
 
 2) Поднять сервисы:
