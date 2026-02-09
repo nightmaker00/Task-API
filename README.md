@@ -24,7 +24,7 @@ Task API — REST API сервис для управления задачами 
 1) Создать `.env` из шаблона:
 
 ```
-cp .env.example .env
+cp .env.example deployments/.env
 ```
 
 2) Поднять сервисы:
